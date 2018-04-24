@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: search
+  cloud:
+    services:
+      registrationMethod: route
+
+server:
+  port: 8082
+
+producer:
+  ribbon:
+    ServerListRefreshInterval: 5000
+ribbon:
+  IsSecure: false
+
+security:
+  basic:
+    enabled: false

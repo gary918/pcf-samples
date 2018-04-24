@@ -1,0 +1,9 @@
+instances: 1
+memory: 1024M
+applications:
+- name: account
+  random-route: true
+  services:
+    - garydb
+    - service-registry
+buildpack: java_buildpack

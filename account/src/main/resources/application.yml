@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: account
+  cloud:
+    services:
+      registrationMethod: route
+  datasource:
+    url: jdbc:mysql://localhost:3306/student
+    username: gary
+    password: 123123
+    schema: classpath:schema.sql
+    data: classpath:data.sql
+
+security:
+  basic:
+    enabled: false
